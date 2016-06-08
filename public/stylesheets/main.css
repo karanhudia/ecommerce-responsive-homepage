@@ -287,11 +287,13 @@ div[class*="col-"] {
 
 .category-divider {
   text-align:left; /*Remove this, then make horizontal-bar into category-divider*/
-  width:100px;
+  
 }
 .horizantal-bar {
   border:1px solid black;
   margin-bottom: 30px;
+  width:110px;
+  display: inline-block;
 }
 .thumbnail-divider {
   border:1px solid grey;
