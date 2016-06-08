@@ -73,6 +73,23 @@ ul.topnav li.icon {display: none;}
 }
 
 /*My CSS Starts NOW*/
+body {
+  margin:0px;
+  font-family: 'Times New Roman';
+}
+.background-picture {
+  background-image: url("../images/images/slider11.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  position: relative;
+}
+.background-wrapper {
+  position: relative;
+}
+.image-inside-div{
+  width: 100%;
+}
 .coverPage {
   /*background-repeat: no-repeat;*/
   -webkit-background-size: cover;
@@ -120,6 +137,7 @@ table, th, td {
     width:20%;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 * {
     box-sizing: border-box;
@@ -133,7 +151,7 @@ table, th, td {
   width: 25%;
 }
 .col-33 {
-  width: 33.33%;
+  width: 33.333333%;
 }
 .col-50 {
   width: 50%;
@@ -226,7 +244,9 @@ div[class*="col-"] {
   font-size:18px;
   text-align: left;
 }
-
+.classification-tags {
+  position: absolute;
+}
 .new-tag {
   background-color: green;
   color:white;
@@ -235,7 +255,19 @@ div[class*="col-"] {
   padding-bottom:10px;
   width:50px;
   height: 25px;
-  position: absolute;
+  position: relative;
+  margin-bottom: 5px;
+}
+.sale-tag {
+  background-color: blue;
+  color:white;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom:10px;
+  width:50px;
+  height: 25px;
+  position: relative;
+  margin-bottom: 5px;
 }
 .row-heading {
   font-size:25px;
