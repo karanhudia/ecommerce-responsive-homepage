@@ -285,10 +285,6 @@ div[class*="col-"] {
   float: left !important;
 }
 
-.category-divider {
-  text-align:left; /*Remove this, then make horizontal-bar into category-divider*/
-  
-}
 .horizantal-bar {
   border:1px solid black;
   margin-bottom: 30px;
