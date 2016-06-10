@@ -3,6 +3,7 @@
 <head>
 	<title>Test Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./public/stylesheets/main.css">
 	<script type="text/javascript" src="./public/js/_scripts.js"></script>
 	<script src="https://use.fontawesome.com/e3721dae27.js"></script> 
@@ -19,10 +20,52 @@
 		    <td></td>
 		  </tr>
 		</table>
+		<div style="position: absolute;top: 0;left: 0;right: 0;text-align: center;">
+			<div class="container">
+				<div style="display:block">
+					<div class="pull-left">
+						<img class="item-thumbnail" style="height: 50px;width: auto;" src="./public/images/logo/brand.png" />
+					</div>
+					<div class="pull-right">
+						<input type="text" name="search">
+					</div>
+				</div>
+			</div>
+			<ul class="topnav" style="position:relative;">
+			  <li><a href="#home">HOME</a></li>
+			  <li>
+			  	<select>
+			  		<option><a href="#" >WOMEN</a></option>
+			  	</select>
+			  </li>
+			  <li>
+			  	<select>
+			  		<option>MEN</option>
+			  	</select>
+			  </li>
+			  <li>
+			  	<select>
+			  		<option>FOOTWEAR</option>
+			  	</select>
+			  </li>
+			  <li>
+			  	<select>
+			  		<option>JEWELLERY</option>
+			  	</select>
+			  </li>
+			  <li><a href="#about">ACCESSORIES</a></li>
+			  <li><a href="#about">CONTACTS</a></li>
+			  <li><a href="#about">BLOGS</a></li>
+			  <li class="icon">
+			    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			  </li>
+			</ul>
+		</div>
 	</div>
 	<!-- Responsive Top Navigation bar -->
-	<!-- <div id="navigation-wrapper">
-		<ul class="topnav">
+	<div id="navigation-wrapper" style="position:absolute;">
+		
+		<!-- <ul class="topnav">
 		  <li><a href="#home">HOME</a></li>
 		  <li>
 		  	<select>
@@ -50,37 +93,8 @@
 		  <li class="icon">
 		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 		  </li>
-		</ul>
-		<ul class="topnav">
-		  <li><a href="#home">HOME</a></li>
-		  <li>
-		  	<select>
-		  		<option>WOMEN</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>MEN</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>FOOTWEAR</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>JEWELLERY</option>
-		  	</select>
-		  </li>
-		  <li><a href="#about">ACCESSORIES</a></li>
-		  <li><a href="#about">CONTACTS</a></li>
-		  <li><a href="#about">BLOGS</a></li>
-		  <li class="icon">
-		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-		  </li>
-		</ul>
-	</div> -->
+		</ul> -->
+	</div>
 <!-- 	<div style="color:white;">
 		<h3>IRIURE DOLOR IN HENDRERIT</h3>
 		<h1>DUIS AUTEM VEL EUM</h1>
@@ -89,15 +103,15 @@
 	
 	<div>
 		<div class="container" style="margin-top:30px;">
-			<div class="row">
-				<div class="col-33" style="border-right:1px solid white;">
-					<img src="./public/images/images/banner11.jpg" />
+			<div class="row without-margin-row">
+				<div class="col-33 without-padding-column" style="border-right:0.5px solid white;">
+					<img class="item-thumbnail" src="./public/images/images/banner11.jpg" />
 				</div>
-				<div class="col-33" style="border-right:1px solid white;">
-					<img src="./public/images/images/banner12.jpg" />
+				<div class="col-33 without-padding-column" style="border-left:0.5px solid white;border-right:0.5px solid white;">
+					<img class="item-thumbnail" src="./public/images/images/banner12.jpg" />
 				</div>
-				<div class="col-33">
-					<img src="./public/images/images/banner13.jpg" />
+				<div class="col-33 without-padding-column" style="border-left:0.5px solid white;">
+					<img class="item-thumbnail" src="./public/images/images/banner13.jpg" />
 				</div>
 			</div>
 		</div>
