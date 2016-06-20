@@ -1,5 +1,21 @@
-/* Remove margins and padding from the list, and add a black background color */
-ul.topnav {
+.info-top-nav {
+  position: relative;
+}
+.brand-logo-nav {
+  position: relative;
+  box-shadow: 0px 1px 1px #000 !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  background-color: rgb(33, 33 ,33) !important;
+}
+.menu-item-nav {
+  position: relative;
+  box-shadow:0px 1px 1px rgb(54,54,54) !important;
+}
+/* Remove margins and padding from the list */
+ul.info-top-nav,
+ul.brand-logo-nav,
+ul.menu-item-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -9,96 +25,103 @@ ul.topnav {
 }
 
 /* Float the list items side by side */
-ul.topnav li {display: inline-block;}
+ul.info-top-nav li,
+ul.brand-logo-nav li,
+ul.menu-item-nav li {
+  display: inline-block;
+}
 
 /* Style the links inside the list items */
-ul.topnav li a {
+ul.brand-logo-nav li select {
     display: inline-block;
-    color: #f2f2f2;
+    color: rgb(224,224,224);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+}
+ul.info-top-nav li a,
+ul.menu-item-nav li select,
+ul.menu-item-nav li a {
+    display: inline-block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
-}
-
-ul.topnav li select {
     background-color: transparent;
     border: none;
-    text-align: center;
-    font-size: 17px;
-    text-decoration: none;
-    transition: 0.3s;
-    color: #f2f2f2;
 }
 
-ul.topnav select option:hover{
-    background-color: #111;
-/*    border: none;
-    text-align: center;
-    font-size: 17px;
-    color: white;*/
-}
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #111;}
-ul.topnav li:hover {background-color: #111;}
+ul.menu-item-nav li:hover,
+ul.menu-item-nav li select:hover,
+ul.menu-item-nav li a:hover {
+  color: rgb(219,56,56);
+}
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+/* Hide the list item that contains the link that should open and close the menu-item-nav on small screens */
+ul.menu-item-nav li.icon {
+  display: none;
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the menu-item-nav (li.icon) */
 @media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
+  ul.menu-item-nav li:not(:first-child) {display: none;}
+  ul.menu-item-nav li.icon {
     float: right;
     display: inline-block;
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+/* The "responsive" class is added to the menu-item-nav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
+  ul.menu-item-nav.responsive {position: relative;}
+  ul.menu-item-nav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  ul.topnav.responsive li {
+  ul.menu-item-nav.responsive li {
     float: none;
     display: inline;
   }
-  ul.topnav.responsive li a {
+  ul.menu-item-nav.responsive li a {
     display: block;
     text-align: left;
   }
 }
+.light-theme-border {
+  border: 1px solid rgb(54,54,54);
+}
+.search-input-field {
+  background-color: rgb(33, 33 ,33);
+  border: none;
+  color: white; 
+  height: 50px;
+  padding-left: 5px;
+}
+.search-input-button {
+  background-color: rgb(72, 72 ,72); 
+  border: none;
+  color: white;
+  height: 50px;
+  width: 50px;
+  margin-left: -5px; 
+}
 
-/*My CSS Starts NOW*/
 body {
   margin:0px;
   font-family: 'Times New Roman';
 }
-.background-picture {
-  background-image: url("../images/images/slider11.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: contain;
-  position: relative;
-}
+
 .background-wrapper {
   position: relative;
 }
 .image-inside-div{
   width: 100%;
-}
-.coverPage {
-  /*background-repeat: no-repeat;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  background-attachment: fixed;
 }
 #navigation-wrapper {
   text-align:center;
@@ -131,7 +154,7 @@ body {
 }
 
 table, th, td {
-    border: 1px solid white;
+    border: 1px solid rgb(54,54,54);
     border-collapse: collapse;
     color:white;
     width:20%;
@@ -207,7 +230,8 @@ div[class*="col-"] {
 }
 
 .item-thumbnail {
-  width:100%;
+  height: 48px;
+  width: auto;
 }
 .thumbnail-caption {
   width:100%;
@@ -309,4 +333,11 @@ div[class*="col-"] {
 .without-margin-row {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+.shoppingButton {
+  height: 50px;
+  background-color: rgb(219,56,56);
+  border: none;
+  color: white;
+  font-weight: bold;
 }

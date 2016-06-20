@@ -11,7 +11,7 @@
 <body>
 	<div class="background-wrapper">
 		<img class="image-inside-div" src="./public/images/images/slider11.jpg" />
-		<table style="width:100%;position:absolute;bottom:0px">
+		<table style="width:100%;position:absolute;bottom:3px">
 		  <tr>
 		    <td></td>
 		    <td>Free Shipping on all orders above $100</td> 
@@ -20,18 +20,65 @@
 		    <td></td>
 		  </tr>
 		</table>
+			
 		<div style="position: absolute;top: 0;left: 0;right: 0;text-align: center;">
-			<div class="container">
-				<div style="display:block">
+			<ul class="info-top-nav">
+				<div class="container">
 					<div class="pull-left">
-						<img class="item-thumbnail" style="height: 50px;width: auto;" src="./public/images/logo/brand.png" />
+						<li>
+							<a href="#">
+								<span><i class="fa fa-phone-square" aria-hidden="true"></i>(+1)866-540-3229</span>
+							</a>
+						</li>
 					</div>
 					<div class="pull-right">
-						<input type="text" name="search">
+						<li>
+							<a href="#">
+								<span>Wishlist(0)</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Compare(0)</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Account</span>
+							</a>
+						</li>
 					</div>
 				</div>
-			</div>
-			<ul class="topnav" style="position:relative;">
+			</ul>
+
+			<ul class="brand-logo-nav">
+				<div class="container">
+					<div class="pull-left">
+						<li>
+							<a><img class="item-thumbnail" src="./public/images/logo/brand.png" /></a>
+						</li>
+					</div>
+
+					<li class="light-theme-border">
+						<input class="search-input-field" placeholder="Search" type="text" name="search">
+						<button class="search-input-button" >
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</li>
+
+				  	<li class="light-theme-border">
+				  		<select>
+					  		<option><a href="#" >USD</a></option>
+					  	</select>
+					  	<span style="color:rgb(54,54,54);">|</span>
+					  	<select>
+					  		<option><a href="#" >English</a></option>
+					  	</select>
+				  		<button class="shoppingButton"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOPPING CARD (0)</button>
+				  	</li>
+			  	</div>
+			</ul>
+			<ul class="menu-item-nav">
 			  <li><a href="#home">HOME</a></li>
 			  <li>
 			  	<select>
@@ -61,39 +108,6 @@
 			  </li>
 			</ul>
 		</div>
-	</div>
-	<!-- Responsive Top Navigation bar -->
-	<div id="navigation-wrapper" style="position:absolute;">
-		
-		<!-- <ul class="topnav">
-		  <li><a href="#home">HOME</a></li>
-		  <li>
-		  	<select>
-		  		<option>WOMEN</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>MEN</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>FOOTWEAR</option>
-		  	</select>
-		  </li>
-		  <li>
-		  	<select>
-		  		<option>JEWELLERY</option>
-		  	</select>
-		  </li>
-		  <li><a href="#about">ACCESSORIES</a></li>
-		  <li><a href="#about">CONTACTS</a></li>
-		  <li><a href="#about">BLOGS</a></li>
-		  <li class="icon">
-		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-		  </li>
-		</ul> -->
 	</div>
 <!-- 	<div style="color:white;">
 		<h3>IRIURE DOLOR IN HENDRERIT</h3>
