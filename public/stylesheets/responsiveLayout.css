@@ -1,0 +1,63 @@
+/*For grids, rows and columns to work*/
+* {
+  box-sizing: border-box;
+}
+
+/*Row for grid*/
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*Grid columns*/
+.col-20 {
+  width: 20%;
+}
+.col-25 {
+  width: 25%;
+}
+.col-33 {
+  width: 33.333333%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-100 {
+  width:100%;
+}
+
+/*Float-left for all the columns of the grid*/
+div[class*="col-"] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Container for all the content and markup*/
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Responsive behaviour of the container class*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

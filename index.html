@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/x-icon" href="./public/favicon/favicon.ico">
+	<!-- Default viewport to be mobile first and setting character encoding -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
 		Frontend ECommerce
 	</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
+	<!--Demo Favicon for the page-->
+	<link rel="icon" type="image/x-icon" href="./public/favicon/favicon.ico">
+	<!-- Necessary stylesheets and scripts-->
 	<link rel="stylesheet" type="text/css" href="./public/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="./public/stylesheets/responsiveLayout.css">
 	<script type="text/javascript" src="./public/js/_scripts.js"></script>
 	<script src="https://use.fontawesome.com/e3721dae27.js"></script> 
 </head>
-<body>
+<body id="homepage">
 	<div class="background-wrapper">
-		<img class="image-inside-div" src="./public/images/images/slider11.jpg" />
-		<table style="width:100%;position:absolute;bottom:3px">
+		<!-- Cover image for the background -->
+		<img class="image-inside-div" src="./public/images/images/slider11.jpg" alt="Cover picture of ecommerce homepage"/>
+		<table style="position:absolute;bottom:3px">
 		  <tr>
-		    <td></td>
-		    <td>Free Shipping on all orders above $100</td> 
-		    <td>Worldwide Delivery and same day dispatch</td>
-		    <td>Receive Gifts when you subscribe</td>
-		    <td></td>
+		    <td class="hide-small"></td>
+		    <td>
+			    <i class="fa fa-truck" aria-hidden="true"></i>
+			    Free Shipping on all orders above $100
+			</td> 
+		    <td>
+		    	<i class="fa fa-globe" aria-hidden="true"></i>
+				Worldwide Delivery and same day dispatch
+			</td>
+		    <td>
+		    	<i class="fa fa-gift" aria-hidden="true"></i>
+		    	Receive Gifts when you subscribe
+		    </td>
+		    <td class="hide-small"></td>
 		  </tr>
 		</table>
+
 			
 		<div style="position: absolute;top: 0;left: 0;right: 0;text-align: center;">
 			<ul class="info-top-nav">
