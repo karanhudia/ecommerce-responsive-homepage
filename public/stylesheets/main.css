@@ -267,7 +267,7 @@ div[class*="col-"] {
 
 .footer-icon {
   color:grey;
-  font-size:18px;
+  font-size:36px;
   text-align: left;
 }
 .classification-tags {
@@ -343,3 +343,16 @@ div[class*="col-"] {
   color: white;
   font-weight: bold;
 }
+.horz-bar {
+  border:1px solid rgb(229,229,229);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.brand-name-footer {
+  font-size: 50px;
+  color: rgb(84,84,84);
+}
+.footer-list {
+  list-style-type: none;
+}
+ul.footer-list li:before { content: "-" };
