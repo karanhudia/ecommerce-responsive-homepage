@@ -12,6 +12,7 @@
 	<!-- Necessary stylesheets and scripts-->
 	<link rel="stylesheet" type="text/css" href="./public/stylesheets/main.css">
 	<link rel="stylesheet" type="text/css" href="./public/stylesheets/responsiveLayout.css">
+	<link rel="stylesheet" type="text/css" href="./public/stylesheets/starRatings.css">
 	<script type="text/javascript" src="./public/js/_scripts.js"></script>
 	<script src="https://use.fontawesome.com/e3721dae27.js"></script> 
 </head>
@@ -97,33 +98,35 @@
 			  	</div>
 			</ul>
 			<ul class="menu-item-nav">
-			  <li><a href="#home">HOME</a></li>
-			  <li>
-			  	<select>
-			  		<option><a href="#" >WOMEN</a></option>
-			  	</select>
-			  </li>
-			  <li>
-			  	<select>
-			  		<option>MEN</option>
-			  	</select>
-			  </li>
-			  <li>
-			  	<select>
-			  		<option>FOOTWEAR</option>
-			  	</select>
-			  </li>
-			  <li>
-			  	<select>
-			  		<option>JEWELLERY</option>
-			  	</select>
-			  </li>
-			  <li><a href="#about">ACCESSORIES</a></li>
-			  <li><a href="#about">CONTACTS</a></li>
-			  <li><a href="#about">BLOGS</a></li>
-			  <li class="icon">
-			    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-			  </li>
+				<div class="container">
+				  <li><a href="#home">HOME</a></li>
+				  <li>
+				  	<select>
+				  		<option><a href="#" >WOMEN</a></option>
+				  	</select>
+				  </li>
+				  <li>
+				  	<select>
+				  		<option>MEN</option>
+				  	</select>
+				  </li>
+				  <li>
+				  	<select>
+				  		<option>FOOTWEAR</option>
+				  	</select>
+				  </li>
+				  <li>
+				  	<select>
+				  		<option>JEWELLERY</option>
+				  	</select>
+				  </li>
+				  <li><a href="#about">ACCESSORIES</a></li>
+				  <li><a href="#about">CONTACTS</a></li>
+				  <li><a href="#about">BLOGS</a></li>
+				  <li class="icon">
+				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				  </li>
+				</div>
 			</ul>
 		</div>
 	</div>
@@ -133,144 +136,140 @@
 		<a href="#" class="ghost-button">View Collection</a>
 	</div> -->
 	
-	<div class="container">
+	<div class="container" style="margin-top:30px;">
 
-		<div class="row without-margin-row" style="margin-top:30px;">
-			<div class="col-33 without-padding-column" style="border-right:0.5px solid white;">
-				<img class="item-thumbnail" src="./public/images/images/banner11.jpg" />
+		<div class="row no-horizontal-margin">
+			<div class="col-33-large col-50-small col-100-xsmall equal-horizontal-padding">
+				<img class="image-responsive" src="./public/images/images/banner11.jpg" />
 			</div>
-			<div class="col-33 without-padding-column" style="border-left:0.5px solid white;border-right:0.5px solid white;">
-				<img class="item-thumbnail" src="./public/images/images/banner12.jpg" />
+			<div class="col-33-large col-50-small col-100-xsmall equal-horizontal-padding">
+				<img class="image-responsive" src="./public/images/images/banner12.jpg" />
 			</div>
-			<div class="col-33 without-padding-column" style="border-left:0.5px solid white;">
-				<img class="item-thumbnail" src="./public/images/images/banner13.jpg" />
+			<div class="col-33-large col-50-small col-100-xsmall equal-horizontal-padding">
+				<img class="image-responsive" src="./public/images/images/banner13.jpg" />
 			</div>
 		</div>
 		<div class="row" style="margin-top:10px;">
-			<div class="col-50">
-				<div class="pull-left row-heading">
-					<span>WOMEN</span>
+			<div class="col-50-xsmall">
+				<div class="pull-left">
+					<a>
+						<h2>WOMEN</h2>
+					</a>
 				</div>
 			</div>
-			<div class="col-50">
+			<div class="col-50-xsmall">
 				<div class="pull-right row-arrows">
-					<i class="fa fa-angle-left" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-					<span style="color:lightgray;">|</span>
-					<i class="fa fa-angle-right" style="vertical-align: text-bottom;" aria-hidden="true"></i>
+					<i class="fa fa-angle-left slider-arrows" aria-hidden="true"></i>
+					<span class="accent-color">|</span>
+					<i class="fa fa-angle-right slider-arrows" aria-hidden="true"></i>
 				</div>
 			</div>
 		</div>
-		<hr class="horizantal-bar"/>
+		<!-- <hr class="horizantal-bar"/> -->
 		<div class="row">
-			<div class="col-50">
-				<img class="item-thumbnail" src="./public/images/images/banner14.jpg" />
+			<div class="col-50-large col-50-medium col-100-xsmall">
+				<img class="image-responsive" src="./public/images/images/banner14.jpg" />
 			</div>
-			<div class="col-25">
-				<img class="item-thumbnail" src="./public/images/images/16.jpg" />
-				<div class="thumbnail-caption">
-					<span>Cras Neque metus</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$155.00</span>
-				</div>
-				<span class="rating-static rating-40"></span>
-			</div>
-			<div class="col-25">
-				<img class="item-thumbnail" src="./public/images/images/17.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$222.00</span>
-				</div>
-				<span class="rating-static rating-40"></span>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-50">
-				<div class="pull-left row-heading">
-					<span>FOOTWEAR</span>
-				</div>
-			</div>
-			<div class="col-50">
-				<div class="pull-right row-arrows">
-					<i class="fa fa-angle-left" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-					<span style="color:lightgray;">|</span>
-					<i class="fa fa-angle-right" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-
-		<!-- Horizontal line between categories -->
-		<hr class="horizantal-bar"/>
-
-		<div class="row">
-			<div class="col-25">
-				<img class="item-thumbnail" src="./public/images/images/7_1.jpg" />
-				<div class="thumbnail-caption">
-					<span>Cras Neque metus</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$721.00</span>
-				</div>
-				<span class="rating-static rating-40"></span>
-			</div>
-			<div class="col-25">
-				<img class="item-thumbnail" src="./public/images/images/13.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$333.00</span>
-				</div>
-				<span class="rating-static rating-50"></span>
-			</div>
-			<div class="col-50">
-				<img class="item-thumbnail" src="./public/images/images/banner15.jpg" />
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-50">
-				<div class="pull-left row-heading">
-					<span>BESTSELLERS</span>
-					<span style="color:grey;padding-left:20px;">SALE PRODUCTS</span>
-				</div>
-			</div>
-			<div class="col-50">
-				<div class="pull-right row-arrows">
-					<i class="fa fa-angle-left" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-					<span style="color:lightgray;">|</span>
-					<i class="fa fa-angle-right" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-				</div>
-			</div>
-		</div>
-
-		<!-- Horizontal line between categories -->
-		<hr class="horizantal-bar"/>
-
-		<div class="row">
-			<div class="col-20">
+			<div class="col-25-large col-25-medium col-50-xsmall">
 				<div class="classification-tags">
 					<div class="new-tag">
 						<span>NEW</span>
 					</div>
 				</div>
-				<img class="item-thumbnail" src="./public/images/images/4_3.jpg" />
-				<div class="thumbnail-caption">
-					<span>Cras Neque metus</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$721.00</span>
-				</div>
+				<img class="image-responsive" src="./public/images/images/16.jpg" />
+				<span>Cras Neque metus</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">155.00</span>
 				<span class="rating-static rating-40"></span>
 			</div>
-			<div class="col-20">
+			<div class="col-25-large col-25-medium col-50-xsmall">
+				<div class="classification-tags">
+					<div class="new-tag">
+						<span>NEW</span>
+					</div>
+				</div>
+				<img class="image-responsive" src="./public/images/images/17.jpg" />
+				<span>Nunc Facilisis</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">155.00</span>
+				<span class="rating-static rating-40"></span>
+			</div>
+		</div>
+		<div class="row" style="margin-top:10px;">
+			<div class="col-50-xsmall">
+				<div class="pull-left">
+					<a>
+						<h2>FOOTWEAR</h2>
+					</a>
+				</div>
+			</div>
+			<div class="col-50-xsmall">
+				<div class="pull-right row-arrows">
+					<i class="fa fa-angle-left slider-arrows" aria-hidden="true"></i>
+					<span class="accent-color">|</span>
+					<i class="fa fa-angle-right slider-arrows" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-25-large col-25-medium col-50-xsmall">
+				<div class="classification-tags">
+					<div class="new-tag">
+						<span>NEW</span>
+					</div>
+				</div>
+				<img class="image-responsive" src="./public/images/images/7_1.jpg" />
+				<span>Donec non est</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">721.00</span>
+				<span class="rating-static rating-40"></span>
+			</div>
+			<div class="col-25-large col-25-medium col-50-xsmall">
+				<div class="classification-tags">
+					<div class="new-tag">
+						<span>NEW</span>
+					</div>
+				</div>
+				<img class="image-responsive" src="./public/images/images/13.jpg" />
+				<span>Pellentesque habitant</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">333.00</span>
+				<span class="rating-static rating-50"></span>
+			</div>
+			<div class="col-50-large col-50-medium col-100-xsmall">
+				<img class="image-responsive" src="./public/images/images/banner15.jpg" />
+			</div>
+		</div>
+		<div class="row" style="margin-top:10px;">
+			<div class="col-50-xsmall">
+				<div class="pull-left">
+					<a>
+						<h2>BESTSELLERS</h2>
+					</a>
+				</div>
+			</div>
+			<div class="col-50-xsmall">
+				<div class="pull-right row-arrows">
+					<i class="fa fa-angle-left slider-arrows" aria-hidden="true"></i>
+					<span class="accent-color">|</span>
+					<i class="fa fa-angle-right slider-arrows" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-20-large col-25-medium col-33-small col-50-xsmall">
+				<div class="classification-tags">
+					<div class="new-tag">
+						<span>NEW</span>
+					</div>
+				</div>
+				<img class="image-responsive" src="./public/images/images/4_3.jpg" />
+				<span>Voluptas nulla</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">222.00</span>
+				<span class="rating-static rating-40"></span>
+			</div>
+			<div class="col-20-large col-25-medium col-33-small col-50-xsmall">
 				<div class="classification-tags">
 					<div class="new-tag">
 						<span>NEW</span>
@@ -279,187 +278,163 @@
 						<span>SALE</span>
 					</div>
 				</div>
-				<img class="item-thumbnail" src="./public/images/images/19.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$333.00</span>
-				</div>
-				<span class="rating-static rating-50"></span>
+				<img class="image-responsive" src="./public/images/images/19.jpg" />
+				<span>Primis in faucibus</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">99.00</span>
+				<span class="rating-static rating-40"></span>
 			</div>
-			<div class="col-20">
+			<div class="col-20-large col-25-medium col-33-small col-50-xsmall">
 				<div class="classification-tags">
 					<div class="new-tag">
 						<span>NEW</span>
 					</div>
 				</div>
-				<img class="item-thumbnail" src="./public/images/images/6_4.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$333.00</span>
-				</div>
-				<span class="rating-static rating-50"></span>
+				<img class="image-responsive" src="./public/images/images/6_4.jpg" />
+				<span>Occaecati cuppiditate</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">345.00</span>
+				<span class="rating-static rating-45"></span>
 			</div>
-			<div class="col-20">
+			<div class="col-20-large col-25-medium col-33-small col-50-xsmall">
+				<div class="classification-tags">
+					<div class="new-tag">
+						<span>NEW</span>
+					</div>
+					<div class="sale-tag">
+						<span>SALE</span>
+					</div>
+				</div>
+				<img class="image-responsive" src="./public/images/images/3.jpg" />
+				<span>Fusce aliquam</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">155.00</span>
+				<span class="rating-static rating-35"></span>
+			</div>
+			<div class="col-20-large col-25-medium col-33-small col-50-xsmall">
 				<div class="classification-tags">
 					<div class="new-tag">
 						<span>NEW</span>
 					</div>
 				</div>
-				<img class="item-thumbnail" src="./public/images/images/3.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$333.00</span>
-				</div>
-				<span class="rating-static rating-50"></span>
-			</div>
-			<div class="col-20">
-				<div class="classification-tags">
-					<div class="new-tag">
-						<span>NEW</span>
-					</div>
-				</div>
-				<img class="item-thumbnail" src="./public/images/images/13.jpg" />
-				<div class="thumbnail-caption">
-					<span>Nunc Facilisis</span>
-				</div>
-				<div class="thumbnail-divider"></div>
-				<div class="item-price">
-					<span>$333.00</span>
-				</div>
+				<img class="image-responsive" src="./public/images/images/13.jpg" />
+				<span>Pellentesque habitant</span>
+				<hr class="thumbnail-divider">
+				<span class="item-price">155.00</span>
 				<span class="rating-static rating-50"></span>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-50">
-				<div class="pull-left row-heading">
-					<span>POPULAR POSTS</span>
+		<div class="row" style="margin-top:10px;">
+			<div class="col-50-xsmall">
+				<div class="pull-left">
+					<a>
+						<h2>POPULAR POSTS</h2>
+					</a>
 				</div>
 			</div>
-			<div class="col-50">
+			<div class="col-50-xsmall">
 				<div class="pull-right row-arrows">
-					<i class="fa fa-angle-left" style="vertical-align: text-bottom;" aria-hidden="true"></i>
-					<span style="color:lightgray;">|</span>
-					<i class="fa fa-angle-right" style="vertical-align: text-bottom;" aria-hidden="true"></i>
+					<i class="fa fa-angle-left slider-arrows" aria-hidden="true"></i>
+					<span class="accent-color">|</span>
+					<i class="fa fa-angle-right slider-arrows" aria-hidden="true"></i>
 				</div>
 			</div>
 		</div>
-
-		<!-- Horizontal line between categories -->
-		<hr class="horizantal-bar"/>
-
 		<div class="row">
-			<div class="col-33">
-				<img class="item-thumbnail" src="./public/images/images/blog12.jpg" />
+			<div class="col-33-large col-33-medium col-33-small col-100-xsmall">
+				<img class="image-responsive" src="./public/images/images/blog12.jpg" />
 			</div>
-			<div class="col-33">
-				<img class="item-thumbnail" src="./public/images/images/blog13.jpg" />
+			<div class="col-33-large col-33-medium col-33-small col-100-xsmall">
+				<img class="image-responsive" src="./public/images/images/blog13.jpg" />
 			</div>
-			<div class="col-33">
-				<img class="item-thumbnail" src="./public/images/images/blog12.jpg" />
+			<div class="col-33-large col-33-medium col-33-small col-100-xsmall">
+				<img class="image-responsive" src="./public/images/images/blog12.jpg" />
 			</div>
 		</div>
 	</div>
-		<hr class="horz-bar" />
+		<hr class="horz-bar-across-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-25 footer-icon">
-					<i class="fa fa-video-camera" aria-hidden="true"></i>
+				<div class="col-25-large col-50-medium col-50-small col-100-xsmall footer-icon">
+					<i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;
 					<span>videohive</span>
 				</div>
-				<div class="col-25 footer-icon">
-					<i class="fa fa-themeisle" aria-hidden="true"></i>
+				<div class="col-25-large col-50-medium col-50-small col-100-xsmall footer-icon">
+					<i class="fa fa-themeisle" aria-hidden="true"></i>&nbsp;
 					<span>themeforest</span>
 				</div>
-				<div class="col-25 footer-icon">
-					<i class="fa fa-css3" aria-hidden="true"></i>
+				<div class="col-25-large col-50-medium col-50-small col-100-xsmall footer-icon">
+					<i class="fa fa-css3" aria-hidden="true"></i>&nbsp;
 					<span>codecanyan</span>
 				</div>
-				<div class="col-25 footer-icon">
-					<i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+				<div class="col-25-large col-50-medium col-50-small col-100-xsmall footer-icon">
+					<i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>&nbsp;
 					<span>activeden</span>
 				</div>
 			</div>
 		</div>
-		<hr class="horz-bar" />
+		<hr class="horz-bar-across-page" />
 		<div class="container">
 			<div class="row">
-				<div class="col-25">
+				<div class="col-25-large col-50-small col-100-xsmall">
 					<span class="brand-name-footer">TeeMo</span>
-					<br/>
-					<br/>
-					<span style="color:grey;">
-						Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. Collecting preference he inquietude projection me in by.
-					</span>
-					<br/>
-					<br/>
-					<span style="text-decoration: underline; font-weight:bold;color: rgb(84,84,84);">Continue Reading >></span>
+					<p class="text-block">
+						Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring.
+					</p>
+					<span class="a-link">Continue Reading >></span>
 				</div>
-				<div class="col-25" >
-					<br/>
-					<span style="color:black;font-size:18px; font-weight: bold;">CUSTOMER SERVICE</span>
-					<hr style="border:1px solid rgb(229,229,229);"/>
-					<ul class="footer-list" style="color:grey;padding-left:0px;font-size:18px;margin-top: 20px;">
+				<div class="col-25-large col-50-small col-100-xsmall" >
+					<h3>CUSTOMER SERVICE</h3>
+					<hr class="horz-bar-across-list"/>
+					<ul class="footer-list">
 						<li>Sitemap</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Privacy Policy</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Advanced Search</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Privacy Policy</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Contact Us</li>
 					</ul>
 				</div>
-				<div class="col-25" >
-					<br/>
-					<span style="color:black;font-size:18px; font-weight: bold;">PAYMENT &amp; SHIPPING</span>
-					<hr style="border:1px solid rgb(229,229,229);"/>
-					<ul class="footer-list" style="color:grey;padding-left:0px;font-size:18px;margin-top: 20px;">
+				<div class="col-25-large col-50-small col-100-xsmall" >
+					<h3>PAYMENT &amp; SHIPPING</h3>
+					<hr class="horz-bar-across-list"/>
+					<ul class="footer-list">
 						<li>Product Recall</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Gift Vouchers</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Returns and Exchanges</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Shipping Options</li>
-						<hr style="border:1px solid rgb(229,229,229);"/>
+						<hr class="horz-bar-across-list"/>
 						<li>Gift Vouchers</li>
 					</ul>
 				</div>
-				
-				<div class="col-25" >
-					<br/>
-					<span style="color:black;font-size:18px; font-weight: bold;">CONTACT US</span>
-					<hr style="border:1px solid rgb(229,229,229);"/>
-					<div style="padding-top:15px;">
+				<div class="col-25-large col-50-small col-100-xsmall" >
+					<h3>CONTACT US</h3>
+					<hr class="horz-bar-across-list"/>
+					<div class="list-item-box">
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
-						<span style="font-weight:bold;color: rgb(84,84,84);">Addresses: </span>
-						<span style="color:grey;">Lorom ipsum dolor sit amet, consectetuer adipiscing elit</span>
+						<span class="list-headings">Addresses: </span>
+						<span class="primary-color">Lorom ipsum dolor sit amet, consectetuer adipiscing elit</span>
 					</div>
 					
-					<hr style="border:1px solid rgb(229,229,229);"/>
+					<hr class="horz-bar-across-list"/>
 					
-					<div style="padding-top:15px;">
+					<div class="list-item-box">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
-						<span style="font-weight:bold;color: rgb(84,84,84);">Email: </span>
-						<span style="color:grey;">info@plazathemes.com</span>
+						<span class="list-headings">Email: </span>
+						<span class="primary-color">info@plazathemes.com</span>
 					</div>
 
-					<hr style="border:1px solid rgb(229,229,229);"/>
+					<hr class="horz-bar-across-list"/>
 
-					<div style="padding-top:15px;">
+					<div class="list-item-box">
 						<i class="fa fa-phone" aria-hidden="true"></i>
-						<span style="font-weight:bold;color: rgb(84,84,84);">Phone: </span>
-						<span style="font-weight:bold;color:grey;">0987.654.321</span>
+						<span class="list-headings">Phone: 0987.654.321</span>
 					</div>
 				</div>
 			</div>
